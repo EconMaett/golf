@@ -12,3 +12,5 @@ RoxygenNote: 7.2.3
 Imports: 
     dplyr,
     withr
+URL: https://github.com/EconMaett/golf
+BugReports: https://github.com/EconMaett/golf/issues
