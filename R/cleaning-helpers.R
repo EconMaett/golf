@@ -11,7 +11,7 @@ lookup_table <- dplyr::tribble(
 
 #' @export
 localize_beach <- function(dat) {
-  dplyr::left_join(dat, lookup_table)
+  dplyr::left_join(x = dat, y = lookup_table)
 }
 
 f_to_c <- function(x) (x - 32) * 5/9
