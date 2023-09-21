@@ -8,5 +8,5 @@ lookup_table <- dplyr::tribble(
   "seaside",     "UK"
 )
 
-usethis::use_data(lookup_table, overwrite = TRUE)
+usethis::use_data(lookup_table, overwrite = TRUE, internal = TRUE)
 # END
