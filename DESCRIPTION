@@ -14,3 +14,6 @@ Imports:
     withr
 URL: https://github.com/EconMaett/golf
 BugReports: https://github.com/EconMaett/golf/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true

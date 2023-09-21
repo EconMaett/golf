@@ -1,13 +1,5 @@
 # cleaning-helpers.R
-english <- temp <- NULL
-
-lookup_table <- dplyr::tribble(
-  ~where, ~english,
-  "beach",     "US",
-  "coast",     "US",
-  "seashore",     "UK",
-  "seaside",     "UK"
-)
+english <- temp <- lookup_table <-  NULL
 
 #' @export
 localize_beach <- function(dat) {
