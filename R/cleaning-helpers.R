@@ -26,4 +26,14 @@ outfile_path <- function(infile, time = Sys.time()) {
   paste0(ts, "_", sub("(.*)([.]csv$)", "\\1_clean\\2", infile))
 }
 
+
+#' @export
+golf_example <- function(path = NULL) {
+  if (is.null(path)) {
+    dir(path = system.file("extdata", package = "golf"))
+  } else {
+    system.file("extdata", path, package = "golf", mustWork = TRUE)
+  }
+}
+
 # END
