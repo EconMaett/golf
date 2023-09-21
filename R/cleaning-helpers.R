@@ -1,5 +1,5 @@
 # cleaning-helpers.R
-english <- temp <- lookup_table <-  NULL
+english <- temp <-  NULL
 
 #' @export
 localize_beach <- function(dat) {
