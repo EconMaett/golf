@@ -3,7 +3,7 @@ english <- temp <- lookup_table <-  NULL
 
 #' @export
 localize_beach <- function(dat) {
-  dplyr::left_join(x = dat, y = lookup_table)
+  dplyr::left_join(x = dat, y = lookup_table, copy = TRUE)
 }
 
 f_to_c <- function(x) (x - 32) * 5/9
