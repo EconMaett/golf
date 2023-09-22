@@ -1,3 +1,7 @@
+#' Create an internal environment
+the <- new.env(parent = emptyenv())
+the$favorite_letters <- letters[1:3]
+
 #' Report my favorite letters
 #' @export
 mfl2 <- function() {
@@ -12,4 +16,5 @@ set_mfl2 <- function(l = letters[24:26]) {
   the$favorite_letters <- l
   invisible(old)
 }
+
 # END
